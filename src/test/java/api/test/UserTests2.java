@@ -17,6 +17,7 @@ public class UserTests2 {
     User userpayload;
     String payload;
     public Logger logger;
+
     @BeforeClass
     void setupData() throws JsonProcessingException {
         faker = new Faker();
@@ -28,7 +29,7 @@ public class UserTests2 {
         userpayload.setEmail(faker.internet().safeEmailAddress());
         userpayload.setPassword(faker.internet().password(5, 10));
         userpayload.setPassword(faker.phoneNumber().cellPhone());
-      //for logs
+        //for logs
         logger = LogManager.getLogger(this.getClass());
     }
 
@@ -75,6 +76,12 @@ public class UserTests2 {
         response.then().log().all();
         Assert.assertEquals(response.getStatusCode(), 200);
         logger.info("*********  user deleted *******");
+    }
+
+    @Test
+    public void testGitThing() {
+        System.out.println("hello git");
+        System.out.println("hello second line");
     }
 
 }
