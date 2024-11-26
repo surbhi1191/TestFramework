@@ -81,6 +81,7 @@ public class UserTests2 {
     @Test
     public void testGitThing() {
         System.out.println("hello git");
+        System.out.println("hello second line");
     }
 
 }
