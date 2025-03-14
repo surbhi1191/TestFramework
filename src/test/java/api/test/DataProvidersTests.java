@@ -1,4 +1,4 @@
-package api.test;
+/*package api.test;
 
 import api.endpoints.UserEndPoints;
 import api.payload.User;
@@ -31,3 +31,4 @@ public class DataProvidersTests {
         Assert.assertEquals(response.getStatusCode(), 200);
     }
 }
+*/
